@@ -34,6 +34,7 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 
+console.log('HelloWorld.vue');
 @Options({
   props: {
     msg: String

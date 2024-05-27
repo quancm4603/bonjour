@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2015", // or "es6" for ECMAScript 2015
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
@@ -18,9 +18,8 @@
       "webpack-env"
     ],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"],
+      "api/*": ["api/*"],
     },
     "lib": [
       "esnext",
@@ -34,7 +33,8 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx",
+    "api/**/*.ts",
   ],
   "exclude": [
     "node_modules"
